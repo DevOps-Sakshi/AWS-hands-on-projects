@@ -5,11 +5,6 @@ The objective of this project is to build a scalable web application using multi
 
 ---
 
-## Architecture Diagram
-(Add your diagram image here)
-
----
-
 ## Steps Performed
 
 ### 1. Launch EC2 Instances
@@ -30,11 +25,11 @@ The objective of this project is to build a scalable web application using multi
 ### 4. Mount EFS on Both EC2 Instances
 
 Install EFS utils:
-
-`sudo yum install -y amazon-efs-utils
-`
+```bash
+sudo yum install -y amazon-efs-utils
+```
 ### 5. Start Web Server
-```markdown
+```bash
 sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
@@ -42,7 +37,7 @@ sudo systemctl status httpd
 ```
 
 ### 6. Mount EFS
-```markdown
+```bash
 sudo mount -t efs <EFS-ID>:/ /var/www/html
 df -h
 cd /var/www/html

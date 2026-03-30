@@ -19,7 +19,7 @@ The aim of this project is to learn how to create a custom Amazon Machine Image 
 - Connected to the instance using SSH  
 
 Install Apache:
-```markdown
+```bash
 
 sudo yum update -y
 sudo yum install -y httpd
@@ -28,8 +28,9 @@ sudo systemctl enable httpd
 ```
 
 - Create a sample webpage:
-
-`sudo vi /var/www/html/index.html`
+```bash
+sudo vi /var/www/html/index.html
+```
 - Verified the webpage using the EC2 public IP in browser
 
 ### 3. Create Custom AMI

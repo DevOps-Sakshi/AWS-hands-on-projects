@@ -1,49 +1,71 @@
-# AWS Hands-On Projects
+# 🚀 AWS Hands-On Projects
 
-This repository contains practical AWS projects performed as part of cloud computing learning.
-
----
-
-## Projects Included
-
-### Project 1: Highly Available Web Application with Shared Storage
-- Used EC2 and EFS
-- Implemented shared storage across multiple servers
-- Demonstrated high availability
+This repository contains practical AWS projects completed as part of cloud computing learning. These projects demonstrate real-world implementation of cloud concepts like high availability, automation, backup & disaster recovery, and multi-region deployment.
 
 ---
 
-### Project 2: Create Custom AMI for Auto Deployment
-- Created custom AMI
-- Launched new instances with pre-installed application
-- Reduced manual setup time
+## 📌 Projects Included
+
+### 🔹 [Project 1 - Highly Available Web App (EFS)](Project-1-EFS/project1.md)
+
+* Deployed multiple EC2 instances
+* Used EFS for shared storage
+* Achieved high availability
 
 ---
 
-### Project 3: Backup & Disaster Recovery Strategy
-- Used EBS snapshots for backup
-- Simulated failure and restored data
-- Demonstrated disaster recovery process
+### 🔹 [Project 2 - Custom AMI for Auto Deployment](Project-2-AMI/project2.md)
+
+* Created custom AMI
+* Launched pre-configured EC2 instances
+* Reduced manual setup time
 
 ---
 
-### Project 4: Multi-Region Architecture Simulation
-- Deployed application in Mumbai and Singapore regions
-- Compared latency and cost
-- Understood global infrastructure
+### 🔹 [Project 3 - Backup & Disaster Recovery](Project-3-EBS/project3.md)
+
+* Created EBS snapshots
+* Simulated failure
+* Restored data successfully
 
 ---
 
-## AWS Services Used
-- EC2
-- EFS
-- EBS
-- AMI
-- Security Groups
+### 🔹 [Project 4 - Multi-Region Deployment](Project-4/project4.md)
+
+* Deployed app in Mumbai & Singapore
+* Compared latency and cost
+* Understood global infrastructure
 
 ---
 
-## Learning Outcome
-- Gained hands-on experience with AWS services
-- Understood real-world cloud architecture concepts
-- Learned deployment, backup, and scaling strategies
+## 🛠️ AWS Services Used
+
+* 🖥️ EC2
+* 💾 EBS
+* 📂 EFS
+* 📸 AMI
+* 🔐 Security Groups
+
+---
+
+## 📊 Key Skills Gained
+
+* High Availability Architecture
+* Shared Storage (EFS)
+* Backup & Disaster Recovery
+* Infrastructure Automation (AMI)
+* Multi-Region Deployment
+
+---
+
+
+## 👩‍💻 Author
+
+* Name: Sakshi
+* GitHub: https://github.com/DevOps-Sakshi
+
+---
+
+## ⭐ About This Repository
+
+This repository is created for learning and demonstrating AWS cloud skills through hands-on implementation of real-world scenarios.

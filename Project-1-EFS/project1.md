@@ -75,3 +75,27 @@ vi index.html
 - Learned how to configure EFS for shared storage.
 - Understood high availability using multiple EC2 instances.
 
+## Screenshots
+
+### 1. EC2 Instances Created
+This shows two EC2 instances running in different Availability Zones.
+
+![EC2 Instances](screenshots/image1.png)
+
+---
+
+### 2. EFS Mounted on Server 1
+![EC2 Instances](screenshots/image2.png)
+
+### 2. EFS Mounted on Server 2
+![EC2 Instances](screenshots/image3.png)
+
+### 4. Web Application Running on Server 1
+Application accessed from EC2 Instance 1.
+
+![EC2 Instances](screenshots/image4.png)
+
+### 5. Web Application Running on Server 2
+Same application accessed from EC2 Instance 2.
+
+![EC2 Instances](screenshots/image5.png)

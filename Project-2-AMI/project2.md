@@ -70,6 +70,7 @@ This shows the web application running on the initial EC2 instance after install
 
 ### 2. AMI Created and Visible
 This shows the custom AMI created and visible under "My AMIs" while launching a new instance.
+
 ![AMI](screenshots/image2.png)
 
 

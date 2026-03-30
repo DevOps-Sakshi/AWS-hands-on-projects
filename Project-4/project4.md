@@ -26,7 +26,7 @@ sudo systemctl enable httpd
 ```
 - Create webpage:
 ```bash
-echo "<h1>App running in Mumbai Region</h1>" | sudo tee /var/www/html/index.html
+echo "<h1>App in Mumbai Region</h1>" | sudo tee /var/www/html/index.html
 ```
 - Verified using public IP
 
@@ -35,7 +35,7 @@ echo "<h1>App running in Mumbai Region</h1>" | sudo tee /var/www/html/index.html
 - Launched another EC2 instance
 - Installed Apache and created webpage:
 ```bash
-echo "<h1>App running in Singapore Region</h1>" | sudo tee /var/www/html/index.html
+echo "<h1>App in Singapore Region</h1>" | sudo tee /var/www/html/index.html
 ```
 - Verified using Singapore public IP
 

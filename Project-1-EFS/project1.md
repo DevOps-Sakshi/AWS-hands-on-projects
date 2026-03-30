@@ -30,25 +30,29 @@ The objective of this project is to build a scalable web application using multi
 ### 4. Mount EFS on Both EC2 Instances
 
 Install EFS utils:
-```bash
-sudo yum install -y amazon-efs-utils
 
+`sudo yum install -y amazon-efs-utils
+`
 ### 5. Start Web Server
+```markdown
 sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo systemctl status httpd
+```
 
 ### 6. Mount EFS
+```markdown
 sudo mount -t efs <EFS-ID>:/ /var/www/html
 df -h
 cd /var/www/html
 vi index.html
+```
 
 ### AWS Services Used
-EC2 – for web servers
-EFS – shared file system
-Security Groups – SSH, HTTP and NFS configuration
+- EC2 – for web servers
+- EFS – shared file system
+- Security Groups – SSH, HTTP and NFS configuration
 
 ### Configuration Details
 | EC2 Instance | Web Server | Mount Point   | Security Group            |
@@ -57,17 +61,17 @@ Security Groups – SSH, HTTP and NFS configuration
 | Instance 2   | Apache     | /var/www/html | SSH 22, HTTP 80, NFS 2049 |
 
 ### Challenges Faced
-After installing Apache, I forgot to start the service.
-Because of this, the webpage was not loading.
-Resolved by running:
-sudo systemctl start httpd
-sudo systemctl enable httpd
+- After installing Apache, I forgot to start the service.
+- Because of this, the webpage was not loading.
+#### Resolved by running:
+- sudo systemctl start httpd
+- sudo systemctl enable httpd
 
 ### Output / Result
-The web application is accessible from both EC2 instances.
-Files uploaded from one instance are visible on the other.
+- The web application is accessible from both EC2 instances.
+- Files uploaded from one instance are visible on the other.
 
 ### Learning Summary
-Learned how to configure EFS for shared storage.
-Understood high availability using multiple EC2 instances.
+- Learned how to configure EFS for shared storage.
+- Understood high availability using multiple EC2 instances.
 
